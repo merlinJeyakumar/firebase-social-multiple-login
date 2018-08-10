@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/coordinator"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/providerFacebook"
+                    style="@style/TextAppearance.AppCompat.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="Facebook"
+                    android:textColor="@color/com_facebook_blue"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/providerGoogle"
+                    style="@style/TextAppearance.AppCompat.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="Google"
+                    android:textColor="@color/alert_light"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/providerFirebase"
+                    style="@style/TextAppearance.AppCompat.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="Firebase"
+                    android:textColor="#ffc400"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/tvNewUser"
+                style="@style/TextAppearance.AppCompat.Small"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@color/failed"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="IS_NEW_ACCOUNT : FALSE"
+                android:textColor="@color/colorWhite"
+                android:textIsSelectable="true"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/tvName"
+                style="@style/TextAppearance.AppCompat.Small"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@color/failed"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="USER_NAME"
+                android:textColor="@color/colorWhite"
+                android:textIsSelectable="true"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvEmail"
+                style="@style/TextAppearance.AppCompat.Small"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@color/failed"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="USER_EMAIL"
+                android:textColor="@color/colorWhite"
+                android:textIsSelectable="true"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvId"
+                style="@style/TextAppearance.AppCompat.Small"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@color/failed"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="USER_ID"
+                android:textColor="@color/colorWhite"
+                android:textIsSelectable="true"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/tvConnectEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="Connect Email"
+                android:textColor="@color/failed" />
+
+            <TextView
+                android:id="@+id/tvConnectFacebook"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="Connect Facebook"
+                android:textColor="@color/com_facebook_blue" />
+
+            <TextView
+                android:id="@+id/tvConnectGoogle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="Connect Google"
+                android:textColor="@color/alert_light" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/success"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <EditText
+                android:id="@+id/edEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@color/colorWhite"
+                android:hint="Email"
+                android:inputType="textWebEmailAddress"
+                android:maxLines="1"
+                android:padding="5dp" />
+
+            <EditText
+                android:id="@+id/edPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@color/colorWhite"
+                android:hint="Password"
+                android:maxLines="1"
+                android:padding="5dp"
+                android:text="password" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <Button
+                android:id="@+id/btnUpdate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_margin="5dp"
+                android:background="@color/alert_light"
+                android:text="LINK EMAIL AUTHENTICATION"
+                android:textColor="@color/colorWhite" />
+
+            <Button
+                android:id="@+id/btnSignout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_margin="5dp"
+                android:background="@color/failed"
+                android:text="SIGN OUT"
+                android:textColor="@color/colorWhite" />
+        </LinearLayout>
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

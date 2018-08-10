@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Social Login Demo</string>
+    <string name="action_logout"> Log Out</string>
+    <string name="facebook_app_id">1881783895459926</string>
+    <string name="fb_login_protocol_scheme">fb1881783895459926</string>
+</resources>

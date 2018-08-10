@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="alert">#fe7d6e</color>
+    <color name="alert_light">#fea49a</color>
+    <color name="success">#9ec568</color>
+    <color name="success_light">#bee18c</color>
+    <color name="failed">#1b8e99</color>
+    <color name="failed_light">#bf1b8e99</color>
+    <color name="failed_extra_light">#54b6c0</color>
+    <color name="pending">#dfc56f</color>
+    <color name="disabled_color">#c1c1c1</color>
+    <color name="colorSelectionRed">#ffe6ed</color>
+    <color name="colorSelectionBlue">#96d4da</color>
+
+    <color name="transparent">#00ffffff</color>
+    <color name="tab_underline_color">#4e4eeb</color>
+    <color name="cacaca">#CACACA</color>
+    <color name="colorWhite">#FFF</color>
+    <color name="button_blue">#4e4eeb</color>
+    <color name="sigin_bg_color">#4e4eeb</color>
+</resources>
